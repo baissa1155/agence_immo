@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+    font-family: Verdana, Tahoma, Geneva, Verdana, sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    z-index: 1000;
+    background: dimgray;
+    padding: 25px;
+    text-align: center;
+}
+
+header nav a{
+    padding: 10px 25px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
