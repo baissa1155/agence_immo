@@ -1,5 +1,14 @@
 doctrine:
     dbal:
+        driver: 'pdo_mysql'
+        host: 'localhost'
+        port: '3307'
+        dbname: 'agence_immo'
+        user: 'root'
+        password: ''
+        default_table_options:
+            charset: utf8mb4
+            collate: utf8mb4_unicode_ci
         url: '%env(resolve:DATABASE_URL)%'
 
         # IMPORTANT: You MUST configure your server version,

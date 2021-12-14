@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}BiensImmobiliers
+{% endblock %}
+
+{% block body %}
+	{% for bien in biens %}
+		<div class="row bg-light">
+			<div class="col-md-6">
+				<img src={{ asset('img/biens/img2.jpg')}} class="card-img-top" alt="image du bien">
+				<h5 class="card-title">{{ bien.typesDeBiens }}</h5>
+				<p class="card-text">
+					{{ bien.localite }}
+					<br>
+					{{ bien.description | raw }}</p>
+				<h2 class="card-text">
+					Prix :
+					{{ bien.prix | raw }}
+					CFA
+				</h2>
+				<a href="{{ path('show_bien', {'id': bien.id} ) }}" class="btn btn-info">En savoir plus</a>
+				<p class="card-text">
+					<small class="text-muted">Date soumis :
+						{{ bien.dateSoumis | date('d/m/Y') }}
+						à
+						{{ bien.dateSoumis | date('H/i') }}
+					</small>
+				</p>
+				<br>
+				<hr>
+			</div>
+		</div>
+	{% endfor %}
+
+{% endblock %}

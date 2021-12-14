@@ -1,20 +1,112 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello BiensImmobiliersController!{% endblock %}
+{% block title %}BiensImmobiliers
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/LENOVO T440/Documents/projet/agence_immo/src/Controller/BiensImmobiliersController.php'|file_link(0) }}">src/Controller/BiensImmobiliersController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/LENOVO T440/Documents/projet/agence_immo/templates/biens_immobiliers/index.html.twig'|file_link(0) }}">templates/biens_immobiliers/index.html.twig</a></code></li>
-    </ul>
-</div>
+	<div class="card-group">
+		<div class="card">
+			<img src={{ asset('img/biens/img1.jpg')}} class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				<button type="button" class="btn btn-info">En savoir plus</button>
+				<p class="card-text">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<img src={{ asset('img/biens/img2.jpg')}} class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+				<button type="button" class="btn btn-info">En savoir plus</button>
+				<p class="card-text">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<img src={{ asset('img/biens/img3.jpg')}} class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+				<button type="button" class="btn btn-info">En savoir plus</button>
+				<p class="card-text">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="card-group">
+		<div class="card">
+			<img src={{ asset('img/biens/img1.jpg')}} class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				<button type="button" class="btn btn-info">En savoir plus</button>
+				<p class="card-text">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<img src={{ asset('img/biens/img2.jpg')}} class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+				<button type="button" class="btn btn-info">En savoir plus</button>
+				<p class="card-text">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<img src={{ asset('img/biens/img3.jpg')}} class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+				<button type="button" class="btn btn-info">En savoir plus</button>
+				<p class="card-text">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="card-group">
+		<div class="card">
+			<img src={{ asset('img/biens/img1.jpg')}} class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				<button type="button" class="btn btn-info">En savoir plus</button>
+				<p class="card-text">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<img src={{ asset('img/biens/img2.jpg')}} class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+				<button type="button" class="btn btn-info">En savoir plus</button>
+				<p class="card-text">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</p>
+			</div>
+		</div>
+		<div class="card">
+			<img src={{ asset('img/biens/img3.jpg')}} class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Card title</h5>
+				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+				<button type="button" class="btn btn-info">En savoir plus</button>
+				<p class="card-text">
+					<small class="text-muted">Last updated 3 mins ago</small>
+				</p>
+			</div>
+		</div>
+	</div>
 {% endblock %}

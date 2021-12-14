@@ -1,0 +1,39 @@
+{% extends "@EasyAdmin/layout.html.twig" %}
+
+{% block title %}Users
+{% endblock %}
+
+{% block body %}
+	<div class="form-group">
+		<div class="card">
+			<h3 class="card-header text-center">Liste des Utilisateurs</h3>
+			<div class="card-body text-center">
+				<table class="table table-bordered table-hover">
+					<thead>
+						<tr>
+							<th scope="col">ID</th>
+							<th scope="col">Nom utilisateur</th>
+							<th scope="col">Adresse email</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for user in users %}
+							<tr>
+								<th scope="row">{{ user.id}}</th>
+								<td>{{ user.userName }}</td>
+								<td>{{ user.email }}</td>
+							</tr>
+						{% else %}
+							<tr>
+								<td colspan="3">
+									il n y a pas d'Utilisateur inscrit</td>
+							</tr>
+						{% endfor %}
+
+					</tbody>
+				</table>
+				<a href="{{ path('admin')}}" class="btn btn-primary">Retour dashboard</a>
+			</div>
+		</div>
+	</div>
+{% endblock %}

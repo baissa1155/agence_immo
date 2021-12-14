@@ -1,0 +1,21 @@
+{% extends "@EasyAdmin/layout.html.twig" %}
+
+{% block title %}
+	dashboard
+{% endblock %}
+
+{% block content %}
+	<div class="card text-center">
+		<h3 class="card-header">
+			Bienvenue dans la page d'administration de votre site
+		</h3>
+		<div class="card-body">
+			<h5 class="card-title">Special title treatment</h5>
+			<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+			<a href="{{ path('users')}}" class="btn btn-primary">Afficher la liste des Utilisateurs</a>
+		</div>
+		<div class="card-footer text-muted">
+			2 days ago
+		</div>
+	</div>
+{% endblock %}

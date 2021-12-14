@@ -1,0 +1,57 @@
+{% extends "base.html.twig" %}
+
+
+{% block title %}nouveau bien
+{% endblock %}
+
+{% block body%}
+
+	{{ form_start(formBiens) }}
+
+	<h1>Création du bien à vendre</h1>
+
+	{{ form_row(formBiens.types_de_biens,{
+		'attr' : {'placeholder' : " Appartement, Immeuble, Maison, Studio... "}
+	})}}
+	{{ form_row(formBiens.chambres,{
+		'attr' : {'placeholder' : " Nombre de chambres... "}
+	})}}
+	{{ form_row(formBiens.description,{
+		'attr' : {'placeholder' : " Description du bien "}
+	})}}
+	{{ form_row(formBiens.localite,{
+		'attr' : {'placeholder' : " Dakar "}
+	})}}
+	{{ form_row(formBiens.rue_et_numero,{
+		'attr' : {'placeholder' : " Rue Cheikh Anta 123 "}
+	})}}
+	{{ form_row(formBiens.prix,{
+		'attr' : {'placeholder' : " Prix "}
+	})}}
+	{{ form_row(formBiens.revenue_cadestral,{
+		'attr' : {'placeholder' : " Revenue Cadestral "}
+	})}}
+	{{ form_row(formBiens.code_postal,{
+		'attr' : {'placeholder' : " Code Postal "}
+	})}}
+	{{ form_row(formBiens.statut,{
+		'attr' : {'placeholder' : "Statut"}
+	})}}
+	{{ form_row(formBiens.photo_du_bien,{
+		'attr' : {'placeholder' : "URL de l'image"}
+	})}}
+	{{ form_row(formBiens.typesLogements)}}
+	{{ form_row(formBiens.quartier)}}
+
+	<div class="form-group">
+		<div class="form-check">
+			<input class="form-check-input" type="checkbox" id="gridCheck">
+			<label class="form-check-label" for="gridCheck">
+				J'accepte de soumettre ce bien en vente
+			</label>
+		</div>
+	</div>
+	<button type="submit" class="btn btn-primary">Enregistrer</button>
+
+	{{ form_end(formBiens) }}
+{% endblock %}
